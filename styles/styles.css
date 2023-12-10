@@ -1,64 +1,162 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff; 
-    color: #000; 
-  }
-  
-  #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #000; 
-    color: #fff; 
-  }
-  
-  #navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #navbar a {
-    text-decoration: none;
-    color: #fff; 
-    font-weight: bold;
-  }
-  
-  #welcome-section {
-    height: 100vh;
-    background-color: #fff; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000; 
-  }
-  
-  #projects {
-    padding: 20px;
-  }
-  
-  .project-tile {
-    border: 1px solid #000; 
-    padding: 10px;
-    margin: 10px;
-    background-color: #fff; 
-  }
-  
-  #profile-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #000;
-  }
-  @media (max-width: 768px) {
-    #navbar ul {
-      flex-direction: column;
-    }
-  }
-  
+  font-family: 'Quicksand', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://e0.pxfuel.com/wallpapers/879/556/desktop-wallpaper-black-and-brown-aesthetic-dark-brown-aesthetic.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #2d1d0f; 
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4c2f22; 
+  color: #f5f1e7; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #f5f1e7;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+  color: #bf935a; 
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://cdn.wallpapersafari.com/7/32/ZvhbSK.gif'); 
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: #e5e5e5;
+  text-shadow: 2px 2px 4px #000;
+}
+
+#welcome-section h1 {
+  margin-bottom: 10px;
+}
+
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.project-tile {
+  width: 300px;
+  border: none; 
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  background-color: #f5f1e7; 
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  color: #4c2f22; 
+}
+
+.project-tile h3 {
+  margin: 10px 0;
+  color: #4c2f22; 
+}
+
+.project-tile img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #2d1d0f;
+}
+
+.project-tile a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #bf935a; 
+  border: 0px solid #4c2f22;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-tile a:hover {
+  background-color: #4c2f22; 
+  color: #f5f1e7;
+}
+
+.project-tile h2 {
+  margin: 10px 0;
+  color: #4c2f22; 
+}
+
+.project-tile h3 {
+  margin: 10px 0;
+  color: #4f411c; 
+}
+
+.project-tile img {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #2d1d0f;
+}
+
+.project-tile a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff; 
+  background-color: #bf935a; 
+  border: 0px solid #4c2f22;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-tile a:hover {
+  background-color: #4c2f22; 
+  color: #f5f1e7;
+}
+
+#profile-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #2d1d0f;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #2d1d0f;
+  background-color: #f5f1e7;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#profile-link:hover {
+  background-color: #4c2f22; 
+  color: #f5f1e7;
+}
